@@ -2,9 +2,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: black;
-  color: white;
-  text-align: center;
 }
 
 nav {
@@ -25,11 +22,12 @@ li {
 }
 
 body {
-  display: flex;
-  flex-direction: column;
+display: block;
+
 }
 
 .hero {
+  display: flex;
 
 }
 
@@ -42,67 +40,82 @@ main {
 }
 
 main::after {
-  padding-top: 56.25%;
+  padding-top: 20%;
   display: block;
-  content: "";
+}
+
+section {
+  display: block;
 }
 
 #name #greeting {
-  position: absolute;
-  top: 0; bottom: 0; right: 0; left: 0;
+  position: relative;
+  text-align: center;
 }
 
 #name {
-  text-align: center;
   padding: 50px;
   font-size: 75px;
 }
 
 #greeting {
-  text-align: center;
   flex-wrap: wrap;
   font-size: 40px;
   padding: 70px;
+  border-bottom: 2px solid black;
 }
 
-.aboutMe {
+#aboutMe {
   display: flex;
   width: 100%;
   position: relative;
-  flex-direction: column;
-  text-align: center;
+  text-align: left;
+  border: 2px solid black;
 }
 
-.aboutMe::after {
-  padding-top: 56.25%;
+#aboutMeContnet {
+  flex-wrap: wrap;
+}
+
+.sectionTitle {
   display: block;
-  content: "";
+  width: 43%;
+  border-right: 2px solid black;
+  font-size: 50px;
+  text-align: left;
+  padding: 20px;
 }
 
-.myProjects {
+#myProjects {
   display: flex;
   width: 100%;
   position: relative;
-  flex-direction: column;
+  flex-direction: row;
   text-align: center;
+  border: 2px solid black;
 }
 
-.myProjects::after {
-  padding-top: 56.25%;
+.projects {
   display: block;
-  content: "";
+
 }
 
-.contactInfo {
+#contactInfo {
   display: flex;
   width: 100%;
   position: relative;
-  flex-direction: column;
+  flex-direction: row;
   text-align: center;
+  border: 2px solid black;
 }
 
-.contactInfo::after {
-  padding-top: 56.25%;
-  display: block;
-  content: "";
+
+#contact {
+  flex-direction: column;
+  width: 80%;
+}
+
+.photo {
+  height: 200px;
+  border-radius: 50%;
 }
