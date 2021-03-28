@@ -37,11 +37,12 @@ main {
   position: relative;
   flex-direction: column;
   text-align: center;
+  background-image: url(./assets/keyboarddark.jpg);
+  background-size: cover;
 }
 
 main::after {
   padding-top: 20%;
-  display: block;
 }
 
 section {
@@ -63,14 +64,17 @@ section {
   font-size: 40px;
   padding: 70px;
   border-bottom: 2px solid black;
+  color: rgb(57, 30, 212);
 }
 
 #aboutMe {
   display: flex;
+  flex-direction: column;
   width: 100%;
   position: relative;
-  text-align: left;
-  border: 2px solid black;
+  text-align: center;
+  padding: 5%;
+  /* border: 2px solid black; */
 }
 
 #aboutMeContnet {
@@ -78,41 +82,71 @@ section {
 }
 
 .sectionTitle {
-  display: block;
-  width: 43%;
-  border-right: 2px solid black;
+  display: flex;
+  width: 100%;
+  /* border-right: 2px solid black; */
   font-size: 50px;
-  text-align: left;
+  position: relative;
+  justify-content: center;
   padding: 20px;
+  padding-bottom: 7%;
 }
 
 #myProjects {
   display: flex;
   width: 100%;
   position: relative;
-  flex-direction: row;
+  flex-direction: column;
   text-align: center;
-  border: 2px solid black;
+  padding: 5%;
+  flex-wrap: wrap;
+  padding-bottom: 7%;
+  /* border: 2px solid black; */
 }
 
-.projects {
-  display: block;
+.projects img {
+  padding: 4px;
+  border: 1px solid blue;
+  margin: 10px;
+  background-color: seagreen;
+}
 
+.projects img:hover {
+  opacity: .6;
+}
+
+.projects img:hover .banner {
+  opacity: 1;
 }
 
 #contactInfo {
   display: flex;
   width: 100%;
   position: relative;
-  flex-direction: row;
-  text-align: center;
-  border: 2px solid black;
+  flex-direction: column;
+  justify-content: space-around;
+  /* border: 2px solid black; */
 }
 
 
-#contact {
-  flex-direction: column;
-  width: 80%;
+#links {
+  display: flex;
+  width: 100%;
+  font-size: 20px;
+  justify-content: space-around;
+}
+
+footer ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+footer h3 {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+
 }
 
 .photo {
