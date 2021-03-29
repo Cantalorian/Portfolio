@@ -10,4 +10,4 @@ https://github.com/Cantalorian/Portfolio
 ### Live URL
 https://cantalorian.github.io/Portfolio/
 
-![My Portfolio](assets\Screenshot 2021-03-28 184434.png)
+![My Portfolio](./assets/Screenshot 2021-03-28 184434.png)
