@@ -8,7 +8,6 @@ nav {
   display: flex;
   justify-content: center;
   font-size: 20px;
-  border-bottom: 1px solid grey;
 }
 
 ul {
@@ -19,6 +18,10 @@ ul {
 
 li {
   padding: 40px;
+}
+
+li a {
+  color: lightgray;
 }
 
 body {
@@ -37,8 +40,8 @@ main {
   position: relative;
   flex-direction: column;
   text-align: center;
-  background-image: url(./assets/keyboarddark.jpg);
-  background-size: cover;
+  background-image: url(./assets/redpattern.jpg);
+  background-size: 100% 100%;
 }
 
 main::after {
@@ -47,6 +50,7 @@ main::after {
 
 section {
   display: block;
+  background-color: lightgray;
 }
 
 #name #greeting {
@@ -57,14 +61,14 @@ section {
 #name {
   padding: 50px;
   font-size: 75px;
+  color: lightgray;
 }
 
 #greeting {
   flex-wrap: wrap;
   font-size: 40px;
   padding: 70px;
-  border-bottom: 2px solid black;
-  color: rgb(57, 30, 212);
+  color: lightgray;
 }
 
 #aboutMe {
@@ -74,6 +78,7 @@ section {
   position: relative;
   text-align: center;
   padding: 5%;
+  font-size: 25px;
   /* border: 2px solid black; */
 }
 
@@ -83,13 +88,13 @@ section {
 
 .sectionTitle {
   display: flex;
-  width: 100%;
+  width: 50%;
   /* border-right: 2px solid black; */
   font-size: 50px;
+  margin: 0 auto 35px auto;
   position: relative;
   justify-content: center;
-  padding: 20px;
-  padding-bottom: 7%;
+  border-bottom: 3px solid black;
 }
 
 #myProjects {
@@ -105,10 +110,10 @@ section {
 }
 
 .projects img {
-  padding: 4px;
-  border: 1px solid blue;
+  padding: 5px;
+  border: 2px solid black;
   margin: 10px;
-  background-color: seagreen;
+  background-color: rgb(161, 12, 12);
 }
 
 .projects img:hover {
@@ -146,7 +151,11 @@ footer h3 {
   font-size: 30px;
   display: flex;
   justify-content: center;
+  border-top: 3px solid black;
+}
 
+footer li {
+  color: black;
 }
 
 .photo {
