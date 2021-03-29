@@ -10,10 +10,24 @@ nav {
   font-size: 20px;
 }
 
+nav a:link {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: black;
+  text-decoration: underline rgb(161, 12, 12);
+  background-color: lightgray;
+  padding: 3px;
+  border-radius: 15%;
+}
+
 ul {
   display: inline-flex;
   justify-content: space-between;
   list-style: none;
+  flex-wrap: wrap;
 }
 
 li {
@@ -139,12 +153,25 @@ section {
   width: 100%;
   font-size: 20px;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 footer ul {
   width: 100%;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+footer a:link {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  color: rgb(161, 12, 12);
+  text-decoration: underline;
 }
 
 footer h3 {
@@ -159,6 +186,17 @@ footer li {
 }
 
 .photo {
-  height: 200px;
   border-radius: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+  #name {
+    font-size: 55px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #name {
+    font-size: 30px;
+  }
 }
